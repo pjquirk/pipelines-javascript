@@ -16,7 +16,8 @@ steps:
 - task: Npm@1
   displayName: 'npm test'
   inputs:
-    command: test
+    command: custom
+    customCommand: 'test'
 
 - task: PublishTestResults@2
   inputs:
